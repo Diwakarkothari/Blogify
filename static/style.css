@@ -1,0 +1,160 @@
+.body {
+  background: linear-gradient(135deg, #232526,#212425);
+  padding-top: 60px;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+  font-family:'Roboto';
+  text-align:center;
+}
+#container {
+  color:white;
+  text-transform: uppercase;
+  font-size:36px;
+  font-weight:bold;
+  padding-top:200px;
+  position:fixed;
+  width:100%;
+  bottom:75%;
+  display:block;
+  padding-top: 80px;
+}
+
+#flip {
+  height:50px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:#42c58a;
+}
+#flip div:first-child div {
+  background:#4ec7f3;
+}
+#flip div:last-child div {
+  background:#DC143C;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+.page {
+  border: 2px solid white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 2px white;
+  padding: 20px ;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 300px;
+  background-color: #ffffff;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust height as needed */
+}
+
+.write {
+  margin: 0 10px; /* Optional: add some space between buttons */
+}
+.write {
+      color: #fff;
+  text-decoration:none;
+}
+.write {
+  width: 180px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+ }
+
+ .write {
+  background: rgb(96,9,240);
+  background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+  border: none;
+ }
+
+ .write:before {
+  height: 0%;
+  width: 2px;
+ }
+
+ .write:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+               -4px -4px 6px 0 rgba(116, 125, 136, .5),
+     inset -4px -4px 6px 0 rgba(255,255,255,.2),
+     inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+ }
+
+.upload{
+  margin: 0 10px;
+}
+.upload {
+  border: none;
+  display: flex;
+  padding: 0.75rem 1.5rem;
+  background-color: #488aec;
+  color: #ffffff;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  user-select: none;
+  gap: 0.75rem;
+  box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
+  transition: all .6s ease;
+}
+
+.upload:hover {
+  box-shadow: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;
+}
+.upp{
+    text-decoration:none;
+}
+
+.upload:focus,button:active {
+  opacity: .85;
+  box-shadow: none;
+}
+
+.upload svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
